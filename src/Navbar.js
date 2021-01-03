@@ -16,7 +16,7 @@ class Navbar extends Component {
     // super(props);
     // }
     render() {
-        const { isDarkMood } = this.context;
+        const { isDarkMood, toggleTheme } = this.context;
         const { classes } = this.props;
         return (
             <div className={classes.root}>
@@ -32,7 +32,7 @@ class Navbar extends Component {
                         >
                             App Title
                         </Typography>
-                        <Switch />
+                        <Switch onClick={toggleTheme} />
                         <div className={classes.grow} />
                         <div className={classes.search}>
                             <div className={classes.seachIcon}>

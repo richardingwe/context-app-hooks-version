@@ -9,9 +9,18 @@ export class ThemeProvider extends Component {
             isDarkMood: true
         };
     }
+    toggleTheme = () => {
+        this.setState({
+            isDarkMood: !this.state.isDarkMood
+        });
+    };
     render() {
         return (
-            <ThemeContext.Provider value={{ ...this.state }}>
+            <ThemeContext.Provider
+                value={{
+                    ...this.state,
+                    toggleTheme: this.toggleTheme
+                }}>
                 {this.props.children}
             </ThemeContext.Provider>
         );
