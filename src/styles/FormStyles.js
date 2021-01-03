@@ -4,7 +4,7 @@ const styles = theme => ({
     main: {
         width: "auto",
         display: "block",
-        marginTop: "9rem",
+        paddingTop: "5rem",
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
         [theme.breakpoints.up("sm")]: {

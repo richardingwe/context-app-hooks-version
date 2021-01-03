@@ -52,7 +52,7 @@ class Form extends Component {
                             <Input
                                 id="password"
                                 name="password"
-                                autoFocus></Input>
+                            ></Input>
                         </FormControl>
                         <FormControlLabel
                             control={<Checkbox color="primary" />}

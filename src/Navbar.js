@@ -20,7 +20,7 @@ class Navbar extends Component {
                 <AppBar postion="static" color="primary">
                     <ToolBar>
                         <IconButton className={classes.newButton} color="inherit">
-                            <span>*</span>
+                            <span>ES</span>
                         </IconButton>
                         <Typography
                             className={classes.title}
