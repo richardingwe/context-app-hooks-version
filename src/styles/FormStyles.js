@@ -5,8 +5,8 @@ const styles = theme => ({
         width: "auto",
         display: "block",
         paddingTop: "5rem",
-        marginLeft: theme.spacing.unit * 3,
-        marginRight: theme.spacing.unit * 3,
+        marginLeft: `theme.spacing.unit(3)`,
+        marginRight: `theme.spacing.unit(3)`,
         [theme.breakpoints.up("sm")]: {
             width: 400,
             marginLeft: "auto",

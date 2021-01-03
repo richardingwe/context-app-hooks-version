@@ -27,14 +27,14 @@ const content = {
 };
 function Navbar(props) {
 
-    const { isDarkMood, toggleTheme } = useContext(ThemeContext);
+    const { isDarkMode, toggleTheme } = useContext(ThemeContext);
     const { language } = useContext(LanguageContext);
     const { classes } = props;
     const { search, flag } = content[language];
 
     return (
         <div className={classes.root}>
-            <AppBar postion="static" color={isDarkMood ? "default" : "primary"}>
+            <AppBar postion="static" color={isDarkMode ? "default" : "primary"}>
                 <ToolBar>
                     <IconButton className={classes.newButton} color="inherit">
                         <span>{flag}</span>
